@@ -23,6 +23,64 @@
     </header>
 
     <nav>
+        from zipfile import ZipFile
+from pathlib import Path
+
+# Define new add-on HTML content to be added at the end of the current index.html
+addon_html_content = """
+<!-- START OF ADD-ON SECTION -->
+
+<section style="margin-top: 40px;">
+    <h2>📈 Google AdSense: Monetize Your Content</h2>
+    <p>Google AdSense allows you to earn money by displaying ads on your website or blog.</p>
+    <ul>
+        <li><a href="https://www.google.com/adsense/start/" target="_blank">AdSense Sign-Up</a></li>
+        <li>Create a blog or site using tools like Blogger, WordPress, or GitHub Pages.</li>
+        <li>Apply for AdSense with real content and some traffic to get approved.</li>
+    </ul>
+</section>
+
+<section style="margin-top: 40px;">
+    <h2>🌍 Host Your Website From a Phone</h2>
+    <p>You can use <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a> to host a simple website directly from a ZIP file — even from a phone.</p>
+    <ul>
+        <li>Use free apps like “HTML Editor” or “JotterPad” on Android.</li>
+        <li>Compress the HTML file into a .zip and upload it to Netlify Drop.</li>
+    </ul>
+</section>
+
+<section style="margin-top: 40px;">
+    <h2>🧰 Tools & How to Use Them</h2>
+    <ul>
+        <li><strong>ChatGPT</strong>: For writing, coding, planning. Ask it questions like a tutor.</li>
+        <li><strong>Lovable.dev</strong>: A tool to build web apps quickly using AI + Supabase + GitHub.</li>
+        <li><strong>GitHub</strong>: Save and share your code or website.</li>
+        <li><strong>Netlify</strong>: Host your site for free with drag-and-drop simplicity.</li>
+        <li><strong>Canva</strong>: Create professional designs, logos, or posts for social media.</li>
+    </ul>
+</section>
+
+<section style="margin-top: 40px;">
+    <h2>💼 Side Hustles for Nigeria & The Gambia</h2>
+    <ul>
+        <li><a href="https://www.fiverr.com/" target="_blank">Fiverr</a> – Sell services like voiceovers, art, translation.</li>
+        <li><a href="https://www.upwork.com/" target="_blank">Upwork</a> – Apply for online jobs (writing, admin, tech).</li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a> – Create content. Monetize with ads.</li>
+        <li><a href="https://nairaland.com/" target="_blank">Nairaland</a> – Learn, post ads, and find local remote work.</li>
+        <li><a href="https://www.kobo360.com/" target="_blank">Kobo360</a> – A logistics app for drivers & haulers in West Africa.</li>
+    </ul>
+    <p>Need help? ChatGPT is here to guide you, anytime. Just ask how.</p>
+</section>
+
+<!-- END OF ADD-ON SECTION -->
+"""
+
+# Save to file so the user can download and add it manually
+addon_path = "/mnt/data/addon_content.html"
+Path(addon_path).write_text(addon_html_content)
+
+addon_path
+
         <a href="#resources">Resources</a>
         <a href="#hustles">Hustles</a>
         <a href="#tools">Tools</a>
