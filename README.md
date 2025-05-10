@@ -1,1 +1,1 @@
-This is the legacy site for Slum & Lyra.
+#  This is the legacy site by Slum & Lyra for my "boys" in africa that i care about, resources and hustle ideas, passive income projects and just general help with and a nudge to get into a.i. and to use chat gpt
